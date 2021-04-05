@@ -1,0 +1,17 @@
+Two data files provided in /Data, you can use them or any other data for the program. The only condition is a .csv file where the first column are 
+the index of dataset(this gets dropped). 
+
+Cluster amount and Iteration should be positive integers
+
+For successful runs it must be done in steps
+Fetch Input -> Apply Preprocessing -> Train kmeans -> predict profile -> output model -> load model
+
+
+Output PCA Scatter plot and elbow graph are optional, they will create graphs in the Output folder after preprocessing is applied.
+Predict profile is optional and creates a profile graph showing the dataset colored coded into profiles. 
+Output model is optional and saves the tensorflow model in the output folder.
+Load model loads the saved model from the same location, it lets you skip running train kmeans on subsequent runs.
+To predict for a different dataset using the model you have to fetch a different dataset and run preprocessing on it. 
+
+Let me know if anything breaks ill try to fix it. 
+
